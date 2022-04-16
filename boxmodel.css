@@ -1,0 +1,85 @@
+.box {
+    background-color: aqua;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px;
+    /* border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black; */
+    border: solid 5px black;
+    border-radius: 20px;
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    margin: 10px 10px 10px 10px;
+}
+
+#box {
+    background-color: #1E5792;
+    width: 400px;
+    height: 440px;
+    margin: 10px 30px 20px 50px;
+    color: #fff;
+    padding: 25px 10px 30px 20px;
+    border-style: solid;
+    border-width: 22px;
+    border-color: #113152;
+}
+/*width= 400+50+30+44+30= 554*/
+/*height 440+10+44+55= 549*/
+
+#name-box {
+    padding: 5px;
+    border-style: solid;
+    border-color: purple;
+    font-size: 1em;
+    font-family: 'Ms Madi';
+    color: blue;
+}
+
+#profile-box {
+    padding: 30px;
+    border-style: solid;
+    border-color: white;
+}
+
+#bio-box {
+    padding: 20px;
+    border-style: solid;
+    border-color: red;
+    color: green;
+}
+
+#top-box {
+    color: white;
+    margin: 0;
+}
+
+#extra-box {
+    padding: 20px;
+    color: red;
+    border-color: white;
+    border-style: solid;
+    margin: 20px;
+}
+
+#extra-box li:nth-child(1) {
+    color: yellow;
+    background-color: red;
+}
+
+#extra-box li:nth-child(2) {
+    color: white;
+    background-color: aqua;
+    font-size: small;
+}
+
+#extra-box li:nth-child(3) {
+    color: orange;
+    background-color: blue;
+    font: 1em sans-serif;
+}

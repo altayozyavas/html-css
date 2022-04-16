@@ -1,0 +1,41 @@
+/* Collect all CSS here */
+:root {
+    --mainColor: red;
+    --secondarColor: green;
+    --textColor: white;
+    --MainBGColor: black;
+}
+* {
+    background-color: black
+}
+body {
+    /* background: --MainBGColor; */
+    font-size: 24px;
+}
+.main-header {
+    color: var(--mainColor);
+    border-bottom: 10px;
+    border-color: white;
+}
+.footer-header {
+    color: var(--secondarColor);
+}
+p {
+    color: var(--textColor);
+    font-size: 1em;
+}
+
+.blue-italic {
+    font-size: 1em;
+    font-family: 'Ms Madi';
+    color: blue;
+}
+
+.main-header, .footer-header, p {
+    background-color: black;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
