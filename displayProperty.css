@@ -1,0 +1,55 @@
+.page {
+    border: 1px solid solid;
+    width: 600;
+    /* margin: 20px auto; */
+    margin: 50px auto;
+    /* background-color: aqua;*/
+    padding: 10px;
+}
+
+footer, header, article, section {
+    background-color: lightgray;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+nav div {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 5px;
+    margin-right: 60px;
+}
+
+nav div:first-child {
+    margin-left: 20px;
+}
+/* todo: change it first child */
+main section > h2 { 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul  {
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+li  {
+    list-style: none;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+
+footer {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+img {
+    width: 200px;
+    display: block;
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+}
