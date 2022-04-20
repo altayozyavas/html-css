@@ -1,0 +1,26 @@
+table {
+    /* background-color: aqua; */
+    width: 300px;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* tr:nth-child(odd) {
+    background-color: gray;
+} */
+
+tr:nth-child(odd) {
+    background-color: pink;
+}
+
+th {
+    background-color: green;
+}
