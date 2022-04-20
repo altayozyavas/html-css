@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form>
+        <div class="row">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Name">
+        </div>
+        <div class="row">
+            <label for="fname">Last Name:</label>
+            <input id="fname" type="text" placeholder="Last Name">
+        </div>
+        <div class="row">
+            <label for="age">Age:</label>
+            <input type="number" min="15" max="150" pattern="/[0-9]/">
+        </div>
+        <div class="row">
+            <label for="email">Email:</label>
+            <input type="email">
+        </div>
+        <div class="row">
+            <label for="password">Password:</label>
+            <input type="password">
+        </div>
+        <div class="row">
+            <p>Pick your favorite color:</p>
+            <label for="red">Red</label>
+            <input type="checkbox" id="red">
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue">
+            <label for="purple">Purple</label>
+            <input type="checkbox" id="purple">
+        </div>
+
+        <div class="row">
+            <label for="color">Pick your color:</label>
+            <input type="color" id="">
+        </div>
+
+        <div class="row">
+            <label for="date">Pick your date:</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="row">
+            <label for="file">Upload your file:</label>
+            <input type="file" id="file">
+        </div>
+
+        <div class="row">
+            <label>Are you serious?</label>
+            <br>
+            <label for="yes">Yes</label>
+            <input type="radio" name="serious?" id="yes", value="Yes">
+            <label for="no">No</label>
+            <input type="radio" name="serious?" id="no", value="No">
+        </div>
+
+        <div class="row">
+            <label for="comment">Leave comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="title">Select your title:</label>
+            <select name="title" id="title">
+                <option value="mrs">Mrs</option>
+                <option value="ms">Ms</option>
+                <option value="mr">Mr</option>
+            </select>
+        </div>
+
+        <blockquote contenteditable="true" class="row">
+            <p>Edit this content to add your own</p>
+        </blockquote>
+
+        <div class="row">
+            <input type="checkbox" id="red">Read and understand the <a href="#">terms</a>
+        </div>
+
+        <div class="row">
+            <input type="submit">
+        </div>
+    </form>
+
+</body>
+</html>
