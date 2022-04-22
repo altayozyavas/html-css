@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            max-width: 800px;
+            min-width: 800px;
+        }
+        h1 {
+            color: red;
+        }
+        #left {
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+        #right {
+            float: right;
+            width: 50%;
+        }
+        #right img {
+            width: 250px;
+        }
+        #row {
+            padding: 5px;
+        }
+        #contact img {
+            max-width: 20px;
+            padding-left: 10px;
+        }
+        #contact img:hover {
+            opacity: 50%;
+        }
+        #row input {
+            width: 80%;
+            padding: 12px 20px 10px;
+            border: 1px solid lightgray;
+            background-color: beige;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        #terms {
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+        #terms a {
+            text-decoration: none;
+            color: red;
+        }
+        #terms #checkbox {
+            appearance: none;
+            color: red;
+            font: inherit;
+            color: red;
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            transform: translateY(7px);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        /* I couldn't make checkbox work */
+        .submit {
+            width: 38%;
+            padding: 5px;
+            border-radius: 10px;
+            border-color: red;
+            cursor: pointer;
+        }
+        #sign-up {
+            background-color: red;
+            color: white;
+        }
+        #sign-in {
+            color: red;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <h1>Create Account</h1>
+        <div id="contact">
+            <a href="https://www.google.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png" alt="google"></a>
+            <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png" alt="twitter"></a>
+            <a href="https://www.linkedin.com/"><img src="https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png" alt="linkedin"></a>
+        </div>
+        <div>
+            <p>or use your email for registration</p>
+        </div>
+        <div id="row">
+            <input id="name" type="text" placeholder="Name">
+        </div>
+        <div id="row">
+            <input id="email" type="email" placeholder="Email">
+        </div>
+        <div id="row">
+            <input id="password" type="password" placeholder="Password">
+        </div>
+        <div id="terms">
+            <input id="checkbox" type="checkbox">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </div>
+        <div>
+            <input class="submit" id="sign-up" type="submit" value="Sign Up">
+            <input class="submit" id="sign-in" type="submit" value="Sign In">
+        </div>
+    </div>
+    <div id="right">
+        <img src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/storyblocks-caucasian-business-people-gathered-together-in-office-office-worker-working-on-a-laptop-office-worker-talking-on-mobile-phone-office-life-concept-vector-flat-design-illustration-vertical-layout_rOpbJG3hb_SB_PM.jpg" alt="">
+    </div>
+</body>
+</html>
