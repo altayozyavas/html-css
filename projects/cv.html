@@ -5,8 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #header {
+            text-align: center;
+        }
+        #header h1 {
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        #header h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        #contact h3 {
+            display: inline;
+            padding-left: 10%;
+        }
+        #skillset {
+            width: 33%;
+            float: left;
+        }
+        #tech-skills{
+            width: 33%;
+            float: left;
+        }
+        #job, #profile {
+            position: relative;
+            border-top: 1px solid gray;
+        }
+        #job h5 {
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+        a:hover{
+            opacity: 50%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+        <div id="header">
+            <h1>John Doe</h1>
+            <h2>Software Engieer</h2>
+        </div>
+        <div id="contact">
+            <h3>
+                <a href="#">doejohn@domain.com</a>
+            </h3>
+            <h3>(312) 123 4567</h3>
+            <h3>
+                <a href="#">www.linkedin.com/johndoe</a>
+            </h3>
+        </div>
+    </div>
+    <div>
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam in fugiat provident eos sapiente beatae, aut perspiciatis omnis cupiditate reiciendis quaerat temporibus nemo ut modi maiores commodi ipsum voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet incidunt earum ut rem beatae ab enim tempora, recusandae laudantium ducimus assumenda ea, exercitationem odio impedit consequuntur reiciendis quae! Repudiandae, explicabo.</p>
+    </div>
+    <hr>
+    <div>
+        <div id="skillset">
+            <h3>Design</h3>
+            <p>Super experiences with web desing.</p>
+        </div>
+        <div id="skillset">
+            <h3>Leadership</h3>
+            <p>Experienced with coaching/mentoring to peers and junior devs.</p>
+        </div>
+        <div id="skillset">
+            <h3>Communication</h3>
+            <p>Super friendly, willing to help others all the time.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Technical Knowladge</h3>
+            <div id="tech-skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </div>
+            <div id="tech-skills">
+                <ul>
+                    <li>TS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div id="tech-skills">
+                <ul>
+                    <li>Mac</li>
+                    <li>Linux</li>
+                    <li>Windows</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Experience</h2>
+        </div>
+        <div>
+            <div id="job">
+                <h3>TechGlobal</h3>
+                <h4>Sr. Front-end Developer</h4>
+                <h5>2020 - Present</h5>
+                <p>Working so hard everyday. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse delectus quam voluptates deserunt voluptatem facilis, eligendi odio quibusdam inventore consequuntur illo fugiat incidunt, autem voluptatum excepturi fugit odit perferendis mollitia.</p>
+            </div>
+            <div id="job">
+                <h3>Google</h3>
+                <h4>Front-end Developer</h4>
+                <h5>2010 - 2020</h5>
+                <p>I worked everyday 10 hours and did amazing stuff. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo vero aperiam possimus distinctio, reprehenderit temporibus doloribus rem dolore officia voluptate modi ex tenetur porro molestiae ipsam non sed consectetur repudiandae.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
