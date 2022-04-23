@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 600px;
+            height: 500px;
+            background-color: rgb(50, 149, 168);
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .row div {
+            display: flex;
+            width: 120px;
+            height: 80px;
+            background-color: darkslategray;
+            color: white;
+            font-size: 40px;
+            border-radius: 30px;
+            margin: 5px;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        .row div:hover {
+            cursor: pointer;
+            opacity: 75%;
+        }
+
+        .row div:active{
+            box-shadow:10px 10px 10px black;
+        }
+
+        #yellow {
+            background-color: yellowgreen;
+            color: black;
+        }
+
+        #green {
+            background-color: green;
+            color: black;
+        }
+
+        #zero {
+            width: calc(360px + 68px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <div id="yellow">C</div>
+            <div id="zero">0</div>
+        </div>
+        <div class="row">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div id="yellow">X</div>
+        </div>
+        <div class="row">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div id="yellow">/</div>
+        </div>
+        <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div id="yellow">+</div>
+        </div>
+        <div class="row">
+            <div>.</div>
+            <div>0</div>
+            <div id="green">=</div>
+            <div id="yellow">-</div>
+        </div>
+    </div>
+</body>
+</html>
