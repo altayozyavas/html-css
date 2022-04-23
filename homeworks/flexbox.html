@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* border: 1px solid; */
+            /* width: 600px; */
+            /* height: 600px; */
+            /* justify-content: center; */
+            background-color: lightgray;
+            gap: 5px;
+            /* flex: 2; */
+            align-items:center
+        }
+
+        .container > * {
+            flex-basis: 100%;
+        }
+
+        .block > div {
+            border: 1px solid gray;
+            background-color: white;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+        }
+
+        img {
+            /* width: calc(600px / 8); */
+            width: 40px;
+        }
+
+        .price {
+            padding-top: 10px;
+            font-size: 20px;
+            /* display: block */
+        }
+
+        .old-price {
+            text-decoration: line-through;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        .shipping {
+            color: gray;
+            /* display: block; */
+            margin-bottom: 10px;
+        }
+
+        /* .authentic {
+            background-color: lightgray;
+            background-image: url(https://www.seekpng.com/png/detail/285-2858685_tick-user-experience-logo-png.png);
+            background-position: -6px -3px;
+        } */
+
+        .details {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div>
+                <div class="details">
+                    <img src="https://www.jaztime.com/media/catalog/product/cache/1/image/1000x1231/17f82f742ffe127f42dca9de82fb58b1/r/o/rolex-gmt-master-ii-116710-ceramic-116710ln-40mm-black-stainless-steel-1-front.jpg" alt="rolex">
+                    <span class="authentic"> Authenticity Guarantee</span>
+                </div>
+                <div class="details">
+                    <span class="info">Rolex GMT-Master II Stainless steel Black Dial Automatic Mens Watch</span>
+                    <span class="price">$11,999.00</span>
+                    <span class="old-price">$12,499.00</span> | <strong>4% OFF</strong>
+                    <span class="shipping">Free Shipping</span>
+                    <span class="warning">Almost gone</span>
+                </div>
+            </div>
+            <div>Watch 2</div>
+            <div>Watch 3</div>
+        </div>
+        <div class="block">
+            <div>Laptop </div>
+            <div>Advertising</div>
+        </div>
+    </div>
+
+</body>
+</html>
