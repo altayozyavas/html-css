@@ -7,6 +7,12 @@
     <title>Document</title>
     <style>
 
+        body {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
         .main {
             background-color: blueviolet;
             background-image: url(https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80);
@@ -16,8 +22,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 1200px;
-            height: 600px;
+            height: 100vh;
+
         }
 
         .main h1 {
@@ -34,8 +40,55 @@
             color: gray;
         }
 
-        p {
+        .main p {
             color: rgb(181, 135, 165);
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .shoe {
+            display: flex;
+            background-color: black;
+            color: lightgray;
+            align-items: center;
+        }
+
+        .details {
+            display: flex;
+            background-color: black;
+            color: lightgray;
+        }
+
+        .status {
+            flex-basis: 65%;
+        }
+
+        .airmax {
+            display: flex;
+            flex-basis: 40%;
+            justify-content: center;
+        }
+
+        .pdetails {
+            width: 100%;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(16,144,242);
+            font-size: large;
+            border: none;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: white;
         }
 
     </style>
@@ -46,6 +99,54 @@
             DESIGNED BY <span>NIKE</span>
         </h1>
         <p><strong>Buy, Sell</strong> and <strong>Earn</strong></p>
+    </div>
+    <div class="boxes">
+        <div>
+            <h3>Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aliquam quas inventore vero numquam in pariatur eius ipsum adipisci possimus laudantium, maxime quis quibusdam, sunt, molestias quaerat quos quod et.</p>
+        </div>
+        <div>
+            <h3>Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aliquam quas inventore vero numquam in pariatur eius ipsum adipisci possimus laudantium, maxime quis quibusdam, sunt, molestias quaerat quos quod et.</p>
+        </div>
+        <div>
+            <h3>Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aliquam quas inventore vero numquam in pariatur eius ipsum adipisci possimus laudantium, maxime quis quibusdam, sunt, molestias quaerat quos quod et.</p>
+        </div>
+    </div>
+    <div>
+        <div class="shoe">
+            <div class="shoe-image">
+                <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="shoe">
+            </div>
+            <div class="airmax">
+                <h2>Nike Air Max</h2>
+            </div>
+        </div>
+        <div class="details">
+            <div class="status">
+                <h2>LEGENDARY STATUS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi doloribus quisquam officia animi molestias iusto adipisci cum dolor omnis nobis soluta temporibus porro eligendi excepturi recusandae culpa, unde esse magni?</p>
+            </div>
+            <div>
+                <h2>Product Details</h2>
+                <ul>
+                    <li>Soft</li>
+                    <li>Nice</li>
+                    <li>Black</li>
+                    <li>Size 11</li>
+                    <li>Style: 2132156AF</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>A little Reminder</h2>
+        <p>This website is half responsive. Do not assume it will look good in all screen sizes. It is done just to demonstrate some <strong>Flexbox</strong> features.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo delectus ullam beatae quia at quod velit non, atque cupiditate fuga necessitatibus, possimus sint et veniam magnam odio rerum iure molestias?</p>
+    </div>
+    <div>
+        <button>Login</button>
     </div>
 </body>
 </html>
