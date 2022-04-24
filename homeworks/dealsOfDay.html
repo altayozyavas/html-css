@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: lightgray;
+        }
+
+        .container > * {
+            flex-basis: 100%;
+        }
+
+        .left-box > div {
+            display: flex;
+            border: 1px solid gray;
+            background-color: white;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .right-box > div {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+            background-color: white;
+            padding: 5px;
+            margin: 2px;
+            flex: 2 1;
+        }
+
+        img {
+            width: 70px;
+        }
+
+        .price {
+            padding-top: 10px;
+            font-size: 20px;
+            display: block;
+            font-weight: 1000;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        .shipping {
+            color: gray;
+            display: block;
+            margin-bottom: 10px;
+            font-size: small;
+        }
+        
+        .right-box .shipping {
+            margin-bottom: -6%;
+        }
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 60%;
+        }
+
+        .details {
+            padding-left: 10px;
+        }
+
+        .authentic {
+            background-color: rgb(226, 223, 223);
+            padding: 3px;
+        }
+
+        .authentic:before, .certified:before {
+            content: "";
+            display: inline-block;
+            background:  url(http://www.downloadclipart.net/medium/31073-simple-blue-tick-images.png) no-repeat;
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+        }
+
+        .certified:before {
+            width: 20px;
+            height: 20px;
+        }
+
+        .ad-photos .authentic:before {
+            content: "";
+            display: inline-block;
+            background:  url(http://www.downloadclipart.net/medium/31073-simple-blue-tick-images.png) no-repeat;
+            width: 5px;
+            height: 5px;
+            background-size: contain;
+        }
+
+        .info {
+            color: gray;
+        }
+
+        .advertising {
+            flex-basis: 10%;
+        }
+
+        .ad-photos {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .ad-photos .authentic {
+            margin: 0px;
+            font-size: 5px;
+        }
+
+        .ad-photos div {
+            border: 1px solid lightgray;
+        }
+
+        .warranty {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .ad-photos .warranty {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+
+        .certified {
+            margin: 5px;
+        }
+
+        .laptop {
+            height: 59.5%;
+        }
+
+        .advertising {
+            height: 34.7%;
+        }
+
+        .add-details * {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            align-items: baseline;
+        }
+
+        .show-more {
+            font-size: 20px;
+        }
+
+        .arrow {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            width: 20px;
+        }
+
+        .blue {
+            font-size: 30px;
+            color: blue;
+        }
+
+        .notebook {
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <div>
+                <div class="photo">
+                    <img src="https://www.jaztime.com/media/catalog/product/cache/1/image/1000x1231/17f82f742ffe127f42dca9de82fb58b1/r/o/rolex-gmt-master-ii-116710-ceramic-116710ln-40mm-black-stainless-steel-1-front.jpg" alt="rolex">
+                    <h5 class="authentic">Authenticity Guarantee</h5>
+                </div>
+                <div class="details">
+                    <span class="info">Rolex GMT-Master II Stainless steel Black Dial Automatic Mens Watch</span>
+                    <span class="price">$11,999.00</span>
+                    <span class="old-price">$12,499.00</span> | <strong>4% OFF</strong>
+                    <span class="shipping">Free Shipping</span>
+                    <span class="warning">Almost gone</span>
+                </div>
+            </div>
+            <div>
+                <div class="photo">
+                    <img src="https://cdn.shopify.com/s/files/1/0333/0936/0264/products/Stuhrling-860.01-DF.jpg?v=1620750102" alt="Stuhrling">
+                    <h5 class="authentic">Authenticity Guarantee</h5>
+                </div>
+                <div class="details">
+                    <span class="info">Stuhrling Meteorite 860 Hand-wind 42mm Tourbillon Mens Watch</span>
+                    <span class="price">$2,350.00</span>
+                    <span class="old-price">$7,999.00</span> | <strong>71% OFF</strong>
+                    <span class="shipping">Free Shipping</span>
+                    <span class="warning">Almost gone</span>
+                </div>
+            </div>
+            <div>
+                <div class="photo">
+                    <img src="https://img-static.tradesy.com/item/27039982/concord-gold-mariner-14k-yellow-date-thin-quartz-men-s-776-gram-watch-0-0-650-650.jpg" alt="concord">
+                    <h5 class="authentic">Authenticity Guarantee</h5>
+                </div>
+                <div class="details">
+                    <span class="info">Gold Mariner 14k Yellow Date Thin Quartz Men's 77.6 Gram Mens Watch</span>
+                    <span class="price">$4,199.30</span>
+                    <span class="old-price">$5,999.00</span> | <strong>30% OFF</strong>
+                    <span class="shipping">Free Shipping</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="laptop">
+                <div class="photo">
+                    <img class="notebook" src="https://m.media-amazon.com/images/I/714cHoaDUpL._AC_SL1500_.jpg" alt="notebook">
+                    <h4 class="certified">Certified Refurbished</h4>
+                    <h6 class="warranty">Two-year warranty inclueded</h6>
+                </div>
+                <div class="details">
+                    <span class="info">Microsoft Surface Pro 7 12.3" Touchscreen (128GB, Intel Core i5, 8GB) Laptop</span>
+                    <span class="price">$654.99</span>
+                    <span class="old-price">$899.99</span> | <strong>4% OFF</strong>
+                    <span class="shipping">Free Shipping</span>
+                </div>
+            </div>
+            <div class="advertising">
+                <div class="ad-photos">
+                    <div>
+                        <img src="https://www.chanel.com/images//t_one////q_auto:good,f_auto,fl_lossy,dpr_1.2/w_1920/coco-crush-necklace-yellow-yellow-gold-diamond-packshot-default-j12103-8848841670686.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="https://cdn2.jomashop.com/media/catalog/product/cache/fde19e4197824625333be074956e7640/h/u/hublot-classic-fusion-chronograph-black-sleleton-dial-black-rubber-men_s-watch-525ox0180lr.jpg?width=546&height=546" alt="rolex">
+                        <h5 class="authentic">Authenticity Guarantee</h5>
+                    </div>
+                    <div class="photo">
+                        <img src="https://i5.walmartimages.com/asr/b835b1b7-eedb-49bd-b63a-df8d20e97e3b.fb0915a0ca87112acf9132d605e5ad2a.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="rolex">
+                        <h5 class="authentic">Certified Refurbished</h5>
+                        <h6 class="warranty">Two-year warranty inclueded</h6>
+                    </div>
+                    <div>
+                        <img src="https://res.garmin.com/en/products/010-02063-00/v/cf-lg-a1e3ec70-96ed-47fd-b4a4-0f786196f17c.jpg" alt="">
+                    </div>
+                </div>
+                <div class="add-details">
+                    <p class="show-more">Show <span class="blue">85</span> more</p>
+                    <p>We Heart These Deals</p>
+                    <img class="arrow" src="https://www.seekpng.com/png/detail/303-3030085_down-arrow-icon-png-download-double-down-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
