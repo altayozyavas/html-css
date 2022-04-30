@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --myblue: rgb(52, 52, 144);
+        }
+
+         @keyframes changeColor {
+            0% { background-color: rgb(229, 22, 22); }
+            25% { background-color: rgb(232, 92, 17); }
+            50% { background-color: rgb(233, 138, 22); }
+            75% { background-color: rgb(232, 92, 17); }
+            100% { background-color: rgb(229, 22, 22); }
+        }
+
+        body {
+            animation: changeColor 15s infinite;
+        }
+
+        .main {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            margin: 30px;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: max-content;
+            margin: 100px auto;
+        }
+
+        .box {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .startup {
+            background-color: var(--myblue);
+            color: white;
+        }
+
+        .contact {
+            color: var(--myblue);
+            border: 1px var(--myblue) solid;
+            border-radius: 5px;
+            width: 40%;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .startup .contact {
+            background-color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding-inline-start: 0px;
+        }
+
+        ul li:before {
+            content: '✓';
+            color: rgb(82, 79, 79);
+            padding-right: 5px;
+            font-weight: bold;
+        }
+
+        h2, h3 {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h2>Basic</h2>
+            <ul>
+                <li>Manage directly</li>
+                <li>Archived chat for 30 days</li>
+            </ul>
+            <h3>Free</h3>
+            <p class="contact">Sign up</p>
+        </div>
+        <div class="box startup">
+            <h2>Startup</h2>
+            <ul>
+                <li>Facebook Integration</li>
+                <li>Archived chat without limits</li>
+            </ul>
+            <h3>$350/m</h3>
+            <p class="contact">Free trial</p>
+        </div>
+        <div class="box">
+            <h2>Enterprise</h2>
+            <ul>
+                <li>Bot and AI</li>
+                <li>Everything in Startup and Bot</li>
+            </ul>
+            <h3>N/A</h3>
+            <p class="contact">Get A Quote</p>
+        </div>
+    </div>
+</body>
+</html>
