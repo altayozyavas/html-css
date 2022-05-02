@@ -30,10 +30,6 @@
             display: flex;
         }
 
-        .slack > div {
-            /* padding: 10px; */
-        }
-
         .left-menu {
             background-color: var(--myDarkPurple);
             border-top-left-radius: 10px;
@@ -182,6 +178,29 @@
             font-size:12px !important;
         }
 
+        .apps-menu {
+            flex-grow: 1;
+            color: black;
+            /* padding: 15px; */
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+        }
+
+        .menus {
+            /* font-size:15px !important; */
+            padding: 10px;
+        }
+
+        .header * {
+            margin: 0px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -289,7 +308,24 @@
                 </i>
             </div>
         </div>
-        <div class="apps-menu">Apps</div>
+        <div class="apps-menu">
+            <div class="top-menu">
+                <div class="header">
+                    <h4>Apps</h4>
+                    <p>Your tools, right in Slack.</p>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-at"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                
+            </div>
+        </div>
     </main>
 </body>
 </html>
