@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c13725675.js" crossorigin="anonymous"></script>
+    <style>
+
+        :root {
+            --myRed: rgb(205,38,85);
+            --myYellow: rgb(236,178,45);
+            --myBlue: rgb(44,158,224);
+            --myGreen: rgb(83,170,122);
+            --myDarkPurple: rgb(40,15,44);
+            --myLightPurple: rgb(57,21,60);
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        .slack {
+            width: 750px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        .slack > div {
+            /* padding: 10px; */
+        }
+
+        .left-menu {
+            background-color: var(--myDarkPurple);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            flex-basis: 50px;
+        }
+
+        .channels-menu {
+            background-color: var(--myLightPurple);
+            flex-basis: 150px;
+            color: white;
+            padding: 10px;
+            padding-top: 15px;
+        }
+
+        .window-buttons {
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            font-size: 10px;
+            gap: 6px;
+        }
+
+        .red {
+            color: var(--myRed);
+        }
+
+        .yellow {
+            color: var(--myYellow);
+        }
+
+        .green {
+            color: var(--myGreen);
+        }
+
+        .blue {
+            color: var(--myBlue);
+        }
+
+        .workspaces {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .fa-square {
+            font-size: 30px;
+        }
+
+        .plus {
+            color: white;
+            font-size: 20px;
+            border: 0.5px solid lightgrey;
+            border-radius: 5px;
+            padding: 7px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+
+        .fa-square:nth-of-type(1) {
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 2px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .progress-bar {
+            border: 5px solid lightgray;
+            border-radius: 20px;
+            width: 65px;
+            margin-left: 5px;
+        }
+
+        .channels-menu i{
+            font-size: 9px;
+        }
+
+        .fa-bell {
+            margin-left: 45px;
+            font-size:15px !important;
+        }
+
+        .channel-actions {
+            margin: 15px 0px;
+        }
+
+        .nav-box {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            backdrop-filter: blur(10px);
+            width: 85px;
+            padding: 5px;
+            padding-top: 1px;
+            display: inline-block;
+        }
+
+        .channel-navigate {
+            display: inline;
+            padding: 1px 8px 5px;
+            border-radius: 3px 0px 0px 3px;
+        }
+
+        .forward {
+            border-radius: 0px 3px 3px 0px;
+            background-color: rgba(119, 112, 112, 0.3);
+        }
+
+        .channel-apps {
+            background-color: var(--myGreen);
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .channel-apps span {
+            padding-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="slack">
+        <div class="left-menu">
+            <div class="window-buttons">
+                <i class="fa-solid fa-circle red"></i>
+                <i class="fa-solid fa-circle yellow"></i>
+                <i class="fa-solid fa-circle green"></i>
+            </div>
+            <div class="workspaces">
+                <i class="fa-solid fa-square yellow"></i>
+                <i class="fa-solid fa-square green"></i>
+                <i class="fa-solid fa-square blue"></i>
+                <div class="plus">+</div>
+            </div>
+        </div>
+        <div class="channels-menu">
+            Acme Corp
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-circle green">
+                <progress class="progress-bar" id="file" value="10" max="10"></progress>
+            </i>
+            <div class="channel-actions">
+                <div class="nav-box channel-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="nav-box channel-navigate backward">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="nav-box channel-navigate forward">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>  
+            <div>
+                <i class="fa-solid fa-bars">
+                    <progress class="progress-bar" id="file" value="10" max="10"></progress>
+                </i>
+            </div>
+            <div>
+                <i class="fa-solid fa-comment-dots">
+                    <progress class="progress-bar" id="file" value="10" max="10"></progress>
+                </i>
+            </div>
+            <div class="channel-apps">
+                <i class="fa-solid fa-braille"><span>Apps</span></i>
+            </div>
+        </div>
+
+        <div class="apps-menu">Apps</div>
+    </main>
+</body>
+</html>
