@@ -23,7 +23,7 @@
 
         .slack {
             width: 750px;
-            height: 500px;
+            height: 600px;
             background-color: white;
             margin: auto;
             border-radius: 10px;
@@ -104,10 +104,18 @@
         }
 
         .progress-bar {
-            border: 5px solid lightgray;
-            border-radius: 20px;
-            width: 65px;
             margin-left: 5px;
+            border: 0;
+        }
+
+        .progress-bar::-webkit-progress-bar {
+            border-radius: 20px;
+            background-color: var(--myLightPurple);
+        }
+  
+        .progress-bar::-webkit-progress-value {
+            background-color: lightgray !important;
+            border-radius: 20px;
         }
 
         .channels-menu i{
@@ -156,24 +164,22 @@
 
         .channels .progress-bar {
             height: 10px;
-            display: block;
-            margin: 8px;
+            display: inline-block;
         }
 
-        .small-bar {
-            width: 50px;
+        .red-circle {
+            padding-left: 45px;
+            color: var(--myRed);
+            font-size:12px !important;
         }
 
-        .medium-bar {
-            width: 75px;
+        .channels {
+            margin-top: 20px;
         }
 
-        .large-bar {
-            width: 85px;
-        }
-
-        .xlarge-bar {
-            width: 95px;
+        .fa-circle-plus {
+            padding-left: 55px;
+            font-size:12px !important;
         }
 
     </style>
@@ -194,12 +200,14 @@
             </div>
         </div>
         <div class="channels-menu">
-            Acme Corp
-            <i class="fa-solid fa-angle-down"></i>
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-circle green">
-                <progress class="progress-bar" id="file" value="10" max="10"></progress>
-            </i>
+            <div class="channel-header">
+                Acme Corp
+                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-circle green">
+                    <progress class="progress-bar" id="file" value="8" max="10"></progress>
+                </i>
+            </div>
             <div class="channel-actions">
                 <div class="nav-box channel-search">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -213,26 +221,74 @@
             </div>  
             <div>
                 <i class="fa-solid fa-bars">
-                    <progress class="progress-bar" id="file" value="10" max="10"></progress>
+                    <progress class="progress-bar" id="file" value="6" max="10"></progress>
                 </i>
             </div>
             <div>
                 <i class="fa-solid fa-comment-dots">
-                    <progress class="progress-bar" id="file" value="10" max="10"></progress>
+                    <progress class="progress-bar" id="file" value="8" max="10"></progress>
                 </i>
             </div>
             <div class="channel-apps">
                 <i class="fa-solid fa-braille"><span>Apps</span></i>
             </div>
             <div class="channels">
-                <progress class="progress-bar small-bar" id="file" value="10" max="10"></progress>
-                <progress class="progress-bar" id="file" value="10" max="10"></progress>
-                <progress class="progress-bar medium-bar" id="file" value="10" max="10"></progress>
-                <progress class="progress-bar large-bar" id="file" value="10" max="10"></progress>
-                <progress class="progress-bar xlarge-bar" id="file" value="10" max="10"></progress>
+                <progress class="progress-bar" id="file" value="2" max="10"></progress>
+                <i class="fa-solid fa-hashtag">
+                    <progress class="progress-bar" id="file" value="10" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag">
+                    <progress class="progress-bar" id="file" value="5" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="5" max="10"></progress>
+                    <i class="fa-solid fa-circle red-circle"></i>
+                </i>
+                <i class="fa-solid fa-circle green">
+                    <progress class="progress-bar" id="file" value="4" max="10"></progress>
+                </i>
+            </div>
+            <div class="channels">
+                <i>
+                    <progress class="progress-bar" id="file" value="5" max="10"></progress>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </i>
+                <i class="fa-solid fa-hashtag">
+                    <progress class="progress-bar" id="file" value="7" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag">
+                    <progress class="progress-bar" id="file" value="8" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="8" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="5" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="5" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="4" max="10"></progress>
+                </i>
+            </div>
+            <div class="channels">
+                <i>
+                    <progress class="progress-bar" id="file" value="8" max="10"></progress>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </i>
+                <i class="fa-solid fa-hashtag">
+                    <progress class="progress-bar" id="file" value="9" max="10"></progress>
+                </i>
+                <i class="fa-solid fa-hashtag notification-bar">
+                    <progress class="progress-bar" id="file" value="7" max="10"></progress>
+                    <i class="fa-solid fa-circle red-circle"></i>
+                </i>
+                <i class="fa-solid fa-circle green">
+                    <progress class="progress-bar" id="file" value="6" max="10"></progress>
+                </i>
             </div>
         </div>
-
         <div class="apps-menu">Apps</div>
     </main>
 </body>
