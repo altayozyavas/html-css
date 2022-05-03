@@ -22,8 +22,8 @@
         }
 
         .slack {
-            width: 750px;
-            height: 600px;
+            width: 1000px;
+            height: 620px;
             background-color: white;
             margin: auto;
             border-radius: 10px;
@@ -149,7 +149,6 @@
         }
 
         .channel-apps {
-            background-color: var(--myGreen);
             margin-top: 5px;
             margin-bottom: 15px;
         }
@@ -192,12 +191,97 @@
         }
 
         .menus {
-            /* font-size:15px !important; */
             padding: 10px;
+            color: lightgray;
+        }
+
+        .menus * {
+            padding-left: 10px;
+        }
+
+        .menus .fa-magnifying-glass {
+            border: 1px solid lightgray;
+            width: 130px;
+            border-radius: 5px;
+            padding: 5px;
         }
 
         .header * {
             margin: 0px;
+        }
+
+        .apps-search {
+            margin: 5px;
+            color: lightgray;
+            border: 1px solid lightgray;
+            padding: 5px;
+            border-radius: 5px;
+            width: 60%;
+            margin-bottom: 0px;
+        }
+
+        .apps-header {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .apps {
+            margin-left: 5px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+
+        }
+
+        .app-box {
+            border: 1px solid lightgray;
+            width: 225px;
+            height: 50px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .app-box .app-logo {
+            font-size: 35px;
+            align-self: center;
+            padding-left: 5px;
+        }
+
+        .apps h4 {
+            padding-left: 5px;
+            margin: 10px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .apps p {
+            padding-left: 5px;
+            margin: 10px;
+            font-size: 10px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .app-logo {
+            width: 30px;
+        }
+
+        .button-apps .app-box {
+            height: fit-content;
+        }
+
+        .apps-header p {
+            font-size: 12px;
+        }
+
+        .app-text button {
+            width: 80%;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 5px;
         }
 
 
@@ -322,8 +406,148 @@
                     <i class="fa-solid fa-at"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div> 
+            </div>
+            <div class="apps-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search apps by name or category (e.g. productivity, sales)
+            </div>
+            <div class="all-apps">
+                <div class="apps-header">
+                    <h5>Apps in The Sandlot (3)</h5>
+                    <p>Manage apps</p>
                 </div>
-                
+                <div class="apps">
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Teamline</h4>
+                            <p>The simple project management tool for Slack</p>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Google Calender</h4>
+                            <p>See your schedule, respond to invites and get event updates</p>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-w"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Workday</h4>
+                            <p>Workday for Slack</p>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-brands fa-hubspot"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Hubspot</h4>
+                            <p>Marketing sales, customer service and CRM</p>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-face-grin"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Donut</h4>
+                            <p>Meet coworkers for coffee + onboard new employees</p>
+                        </div>
+                    </div class="app-text">
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Cisco Webex Meetings</h4>
+                            <p>Start, schedule or join Webex video meetings</p>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-g"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Guru</h4>
+                            <p>Your integrated knowledge management tool for Slack</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="apps-header">
+                    <h5>Apps Recommendations</h5>
+                    <p>See all apps  in the App Directory</p>
+                </div>
+                <div class="apps button-apps">
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-brands fa-google-drive"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Google Drive</h4>
+                            <p>Get notifications about Google Drive within Slack</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-file-image"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Giphy</h4>
+                            <p>An online library of animated GIFs. An online library of animated GIFs.</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-brands fa-salesforce"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Salesforce</h4>
+                            <p>Search and view information from Salesforce</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Standuply</h4>
+                            <p>#1 Stand Up Bot for daily async meetings. Trusted by 35,000 ...</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-carrot"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Carrot</h4>
+                            <p>Share key updates, news and decision of the company</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-logo">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="app-text">
+                            <h4>Smartsheet</h4>
+                            <p>Plan, track, automate and report on work enabling you to move ...</p>
+                            <button>Add</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
