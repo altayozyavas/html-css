@@ -1,0 +1,175 @@
+main {
+  overflow-y: scroll;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+#first-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e1dfdd;
+  padding: 20px;
+  color: #493737;
+  scroll-snap-align: start;
+}
+
+#first-page i {
+  color: lightcoral;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#first-page img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+#first-page .btn {
+  border: 1px solid #99a4a7;
+}
+
+#first-page .btn:first-child {
+  background: #99a4a7;
+}
+
+#first-page .btn:last-child {
+  background: #65868f;
+}
+
+#first-page .profile {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e1dfdd;
+  padding: 20px;
+  color: #493737;
+  scroll-snap-align: start;
+  margin-top: 5px;
+}
+
+#first-page .profile button {
+  border: 3px solid #99a4a7;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#first-page .profile button:hover {
+  cursor: pointer;
+  background-color: #99a4a7;
+}
+
+#first-page .profile i {
+  color: lightcoral;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#first-page .profile .about-me {
+  margin-right: 25px;
+  max-width: 50%;
+}
+
+#second-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #99a4a7;
+  padding: 20px;
+  color: #493737;
+  scroll-snap-align: start;
+}
+
+#second-page i {
+  color: lightcoral;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#second-page #carouselExampleFade .carousel-inner {
+  margin: 30px;
+  max-width: 70vw;
+}
+
+#second-page #carouselExampleFade .carousel-inner .carousel-item img {
+  border: 10px solid #e1dfdd;
+  border-radius: 20px;
+  margin: auto;
+}
+
+#second-page #carouselExampleFade .carousel-inner .carousel-item .carousel-caption {
+  color: #493737;
+}
+
+#third-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #65868f;
+  padding: 20px;
+  color: #493737;
+  scroll-snap-align: start;
+}
+
+#third-page i {
+  color: lightcoral;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#third-page button {
+  border: 3px solid #99a4a7;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#third-page button:hover {
+  cursor: pointer;
+  background-color: #99a4a7;
+}
+/*# sourceMappingURL=style.css.map */

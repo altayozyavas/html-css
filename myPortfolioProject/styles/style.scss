@@ -1,0 +1,92 @@
+$firstPageColor: rgb(225,223,221);
+$secondPageColor: rgb(153, 164, 167);
+$thirdPageColor: rgb(101, 134, 143);
+$textColor: rgb(73, 55, 55);
+
+@mixin flex($direction, $justifyContent, $background) {
+    height: 100vh;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: center;
+    background: $background;
+    padding: 20px;
+    color: $textColor;
+    scroll-snap-align: start;
+    i{
+        color: lightcoral;
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@mixin commonButton {
+    button {
+        border: 3px solid $secondPageColor;
+        border-radius: 5px;
+        padding: 10px;
+        &:hover {
+            cursor: pointer;
+            background-color: $secondPageColor
+        }
+    }
+}
+
+main {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+#first-page {
+    @include flex(column, flex-start, $firstPageColor);
+    img {
+        border-radius: 50%;
+        width: 200px;
+    }
+    .btn {
+        border: 1px solid $secondPageColor;
+        &:first-child {
+            background: $secondPageColor;
+        }
+        &:last-child {
+            background: $thirdPageColor;
+        }
+    }
+    .profile {
+        @include commonButton();
+        @include flex(row-reverse, center);
+        margin-top: 5px;
+        .about-me {
+            margin-right: 25px;
+            max-width: 50%;
+        }
+    }
+}
+
+
+#second-page {
+    @include flex(column, center, $secondPageColor);
+    #carouselExampleFade {
+        // align-self: center;
+        .carousel-inner {
+            margin: 30px;
+            max-width: 70vw;
+            .carousel-item {
+                img {
+                    border: 10px solid $firstPageColor;
+                    border-radius: 20px;
+                    margin: auto;
+                }
+                .carousel-caption {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+}
+
+#third-page {
+    @include flex(column, center, $thirdPageColor);
+    @include commonButton();
+}

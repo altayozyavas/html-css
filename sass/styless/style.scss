@@ -1,0 +1,34 @@
+// @import "./variables";
+// @import "./header";
+
+$primaryBtn: rgb(66, 119, 134);
+$textColor: rgb(73, 55, 55);
+
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+.contact {
+    @include flexCenter(row, blue);
+    // @extend header;
+    // background-color: coral;
+    // width: 80%;
+}
+
+header {
+    @include flexCenter(column, red);
+    // height: 100vh;
+    // background: lightblue;
+    color: $textColor;
+    button {
+        background: $primaryBtn;
+        &::after {
+            content: "Hellooooo";
+        }
+    }
+}
