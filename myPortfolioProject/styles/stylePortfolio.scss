@@ -86,6 +86,6 @@ main {
 }
 
 #third-page {
-    @include flex(column, space-around, $thirdPageColor);
+    @include flex(column, space-evenly, $thirdPageColor);
     @include commonButton();
 }
