@@ -13,7 +13,7 @@ $textColor: rgb(73, 55, 55);
     padding: 20px;
     color: $textColor;
     scroll-snap-align: start;
-    i{
+    i {
         color: lightcoral;
         padding: 20px;
         font-size: 25px;
@@ -68,7 +68,6 @@ main {
 #second-page {
     @include flex(column, space-between, $secondPageColor);
     #carouselExampleFade {
-        // align-self: center;
         .carousel-inner {
             margin: 30px;
             max-width: 70vw;
@@ -89,7 +88,4 @@ main {
 #third-page {
     @include flex(column, space-around, $thirdPageColor);
     @include commonButton();
-    // a {
-        // padding-bottom: 250px;
-    // }
 }
