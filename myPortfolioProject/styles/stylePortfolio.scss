@@ -16,7 +16,7 @@ $textColor: rgb(73, 55, 55);
     i{
         color: lightcoral;
         padding: 20px;
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -55,7 +55,7 @@ main {
     }
     .profile {
         @include commonButton();
-        @include flex(row-reverse, center);
+        @include flex(row-reverse, center, $firstPageColor);
         margin-top: 5px;
         .about-me {
             margin-right: 25px;
@@ -66,7 +66,7 @@ main {
 
 
 #second-page {
-    @include flex(column, center, $secondPageColor);
+    @include flex(column, space-between, $secondPageColor);
     #carouselExampleFade {
         // align-self: center;
         .carousel-inner {
@@ -87,6 +87,9 @@ main {
 }
 
 #third-page {
-    @include flex(column, center, $thirdPageColor);
+    @include flex(column, space-around, $thirdPageColor);
     @include commonButton();
+    // a {
+        // padding-bottom: 250px;
+    // }
 }
