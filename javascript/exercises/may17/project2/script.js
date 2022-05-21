@@ -1,3 +1,7 @@
+// # Project Idea 2
+// - Create a button inside your body element
+// - Whenever i click on button change background color of body randomly
+
 const body = document.getElementById("main");
 const colorButton = document.getElementById("btn");
 
