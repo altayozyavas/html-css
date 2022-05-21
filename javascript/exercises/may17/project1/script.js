@@ -9,7 +9,7 @@ const body = document.getElementsByTagName("body")[0];
 const allButtons = document.getElementsByTagName("button");
 const messageBox = document.getElementById("message");
 const errMessage = "Wrong input, try again!";
-const successMessage = "Nice Choice!";
+const successMessage = "Nice choice!";
 const green = "green";
 
 body.addEventListener("keydown", (event) => {
