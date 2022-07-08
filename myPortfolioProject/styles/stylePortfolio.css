@@ -173,12 +173,15 @@ main {
   background-color: #99a4a7;
 }
 
+.profile-photo {
+  -webkit-transition: all 3000ms ease-out;
+  transition: all 3000ms ease-out;
+}
+
 .profile-photo:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .pop-up-layer {
